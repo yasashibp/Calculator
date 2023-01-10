@@ -1,0 +1,79 @@
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(116.95deg, #02539D 0%, #52ACFF 100%);
+}
+.layar {
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 1px 10px 2px 2px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.button {
+  font-weight: bold;
+  padding: 5px;
+  color: #FBFBFB;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgba(5, 5, 5, 0.7);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+}
+.button:active{
+  background-color: red;
+}
+
+.pembungkus {
+  background: linear-gradient(166.34deg, #373737 0%, #252628 22.9%, #011D37 100%);
+  padding: 60px 15px 10px 15px;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  gap:4px;
+  overflow: hidden;
+  grid-template-rows: auto auto auto auto auto auto;
+  display:grid;
+}
+
+.pembungkus > .btn:nth-child(1),
+.pembungkus > .btn:nth-child(2),
+.pembungkus > .btn:nth-child(3),
+.pembungkus > .btn:nth-child(4),
+.pembungkus > .btn:nth-child(5),
+.pembungkus > .btn:nth-child(6) {
+  width: 400px;
+  display: grid;
+  gap: 4px;
+  /* grid-template-columns: 48.5px 48.5px 48.5px 48.5px; */
+  grid-template-columns: 97px 97px 97px 97px;
+
+}
+
+.pembungkus > .btn:nth-child(6) > .button:nth-child(1){grid-area: tujuh;}
+.pembungkus > .btn:nth-child(6) > .button:nth-child(2){grid-area: delapan;}
+.pembungkus > .btn:nth-child(6) > .button:nth-child(3){grid-area: samadgn;}
+
+
+
+.pembungkus > .btn:nth-child(6) {
+  display: grid;
+  gap: 4px;
+  grid-template-areas: 'tujuh delapan samadgn samadgn';
+}
+
+.mainN {
+  font-weight: bold;
+  font-size: 60px;
+  color: #FBFBFB;
+}
+.secN {
+  color: rgba(251, 251, 251, 0.5);
+  font-size: 20px;
+}
